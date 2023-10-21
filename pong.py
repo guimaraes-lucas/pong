@@ -1,4 +1,6 @@
-import pygame, sys, random
+import pygame
+import sys
+import random
 
 
 def animacao_bola():
@@ -42,9 +44,10 @@ def animacao_oponente():
 
 def reinicia_bola():
     global velocidade_bola_y, velocidade_bola_x
-    bola.center = (comprimento_tela/2, altura_tela/2)
+    bola.center = (comprimento_tela / 2, altura_tela / 2)
     velocidade_bola_y *= random.choice((1, -1))
     velocidade_bola_x *= random.choice((1, -1))
+
 
 # Configuração Inicial
 pygame.init()
